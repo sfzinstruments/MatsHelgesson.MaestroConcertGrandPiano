@@ -1,0 +1,31 @@
+#define $ART mcr
+master_label=$ART
+ampeg_release=0.3
+trigger=release
+rt_decay=2.5
+polyphony=1
+group=1
+
+<group>
+lovel=1
+hivel=31
+#define $DYN mp
+#include "Data/region.txt"
+
+<group>
+lovel=32
+hivel=63
+#define $DYN mf
+#include "Data/region.txt"
+
+<group>
+lovel=64
+hivel=95
+#define $DYN f
+#include "Data/region.txt"
+
+<group>
+lovel=96
+hivel=127
+#define $DYN ff
+#include "Data/region.txt"

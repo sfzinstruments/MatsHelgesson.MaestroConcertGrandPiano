@@ -1,0 +1,75 @@
+// --------------------------------------
+// SFZ format v2 with ARIA extensions
+// --------------------------------------
+// Maestro Concert Grand v2
+// Mats Helgesson
+// --------------------------------------
+// converted by kinwie
+// --------------------------------------
+
+
+//midi cc
+#define $SUS_PED 64
+#define $MID_PED 66
+#define $LID 67
+#define $RELEASE 72
+#define $REL_NOI 80
+#define $PED_NOI 81
+#define $VELTRACK 99
+
+//pedal range
+#define $PED_UP 63
+#define $PED_DN 64
+
+//file extension
+#define $EXT flac
+
+
+////////////////////////////////////////////////////////////////
+<control>
+default_path=Samples/
+
+label_cc$SUS_PED=Sus.Pedal ($SUS_PED)
+label_cc$MID_PED=Mid.Pedal ($MID_PED)
+label_cc$LID=Lid ($LID)
+label_cc$RELEASE=Release ($RELEASE)
+label_cc$REL_NOI=Rel.Noise ($REL_NOI)
+label_cc$PED_NOI=Ped.Noise ($PED_NOI)
+label_cc$VELTRACK=Veltrack ($VELTRACK)
+
+set_hdcc$RELEASE=0.5
+set_hdcc$REL_NOI=1
+set_hdcc$PED_NOI=1
+set_hdcc$VELTRACK=0.99
+
+
+//**************************************************************
+<global>
+amp_veltrack=0
+amp_veltrack_oncc$VELTRACK=100
+
+<master>
+#include "Data/group.txt"
+
+<master>
+locc$REL_NOI=1
+amplitude_oncc$REL_NOI=200
+#include "Data/release.txt"
+
+
+//**************************************************************
+<global>
+locc$PED_NOI=1
+amplitude_oncc$PED_NOI=100
+#include "Data/effect.txt"
+
+
+//--------------------------
+<curve>
+curve_index=7
+v021=0.1
+v036=0.054
+v084=0.054
+v090=0.1
+v091=1
+v108=1

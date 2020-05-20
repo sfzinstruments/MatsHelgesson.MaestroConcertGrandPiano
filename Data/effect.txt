@@ -1,0 +1,47 @@
+loop_mode=one_shot
+seq_length=2
+polyphony=1
+lokey=-1
+hikey=-1
+
+
+//===================================================
+<master>
+master_label=sus.pedal
+group=2
+
+<group> on_hicc$SUS_PED=$PED_UP group_label=up
+<region> seq_position=1 region_label=1 sample=mcg_e_spr_mf.$EXT
+<region> seq_position=2 region_label=2 sample=mcg_e_spr_f.$EXT
+
+<group> on_locc$SUS_PED=$PED_DN group_label=down //loop_mode=loop_continuous
+<region> seq_position=1 region_label=1 loop_start=133376 loop_end=171007 sample=mcg_e_sp_mf.$EXT
+<region> seq_position=2 region_label=2 loop_start=114176 loop_end=174232 sample=mcg_e_sp_f.$EXT
+
+
+//===================================================
+<master>
+master_label=mid.pedal
+group=3
+
+<group> on_hicc$MID_PED=$PED_UP group_label=up
+<region> seq_position=1 region_label=1 sample=mcg_e_mpr_mf.$EXT
+<region> seq_position=2 region_label=2 sample=mcg_e_mpr_f.$EXT
+
+<group> on_locc$MID_PED=$PED_DN group_label=down
+<region> seq_position=1 region_label=1 sample=mcg_e_mp_mf.$EXT
+<region> seq_position=2 region_label=2 sample=mcg_e_mp_f.$EXT
+
+
+//===================================================
+<master>
+master_label=lid
+group=4
+
+<group> on_hicc$LID=$PED_UP group_label=close
+<region> seq_position=1 region_label=1 sample=mcg_e_lc_mf.$EXT
+<region> seq_position=2 region_label=2 sample=mcg_e_lc_f.$EXT
+
+<group> on_locc$LID=$PED_DN group_label=open
+<region> seq_position=1 region_label=1 sample=mcg_e_lo_mf.$EXT
+<region> seq_position=2 region_label=2 sample=mcg_e_lo_f.$EXT

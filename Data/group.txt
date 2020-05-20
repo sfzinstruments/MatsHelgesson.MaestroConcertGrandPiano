@@ -1,0 +1,37 @@
+#define $ART mcg
+master_label=$ART
+ampeg_release_oncc$RELEASE=1
+ampeg_release_curvecc$RELEASE=1
+ampeg_release_oncc131=0.4
+ampeg_release_oncc133=12
+ampeg_release_curvecc133=7
+
+<group>
+lovel=1
+hivel=29
+#define $DYN p
+#include "Data/region.txt"
+
+<group>
+lovel=30
+hivel=59
+#define $DYN mp
+#include "Data/region.txt"
+
+<group>
+lovel=60
+hivel=89
+#define $DYN mf
+#include "Data/region.txt"
+
+<group>
+lovel=90
+hivel=108
+#define $DYN f
+#include "Data/region.txt"
+
+<group>
+lovel=109
+hivel=127
+#define $DYN ff
+#include "Data/region.txt"
