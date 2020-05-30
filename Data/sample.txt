@@ -1,3 +1,3 @@
-sample=$ART_$DYN_$NUM.$EXT
-region_label=$NUM
-key=$NUM
+sample=$ART_$DYN_$KEY.$EXT
+region_label=$KEY
+key=$KEY
