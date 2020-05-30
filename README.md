@@ -33,3 +33,20 @@ midi key number 12, 13, 14, 15, 16 and 17.
 **note**: This is changed with Concert Grand v2, which has
 separate versions of the piano, and additional release
 samples in four velocities, adding 352 samples.
+
+
+# Details
+
+Pedals and Lid noises has been moved to Pedal CCs in this SFZ version.
+
+- Sustain pedal noise, at Sustain pedal CC64
+- Mid pedal noise, at Sostenuto pedal CC66
+- Lid noise, at Soft pedal CC67
+
+Release, to control Volume envelope release time.
+
+Rel.Noise, to control Key-release noise volume.
+
+Ped.Noise, to control Pedals noise volume.
+
+Veltrack, to control Velocity to volume tracking.
