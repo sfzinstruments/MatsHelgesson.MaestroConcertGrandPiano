@@ -18,8 +18,8 @@
 #define $VELTRACK 99
 
 //pedal range
-#define $PED_UP 63
-#define $PED_DN 64
+#define $PED_UP 0
+#define $PED_DN 127
 
 //file extension
 #define $EXT flac
@@ -37,9 +37,9 @@ label_cc$REL_NOI=Rel.Noise ($REL_NOI)
 label_cc$PED_NOI=Ped.Noise ($PED_NOI)
 label_cc$VELTRACK=Veltrack ($VELTRACK)
 
-set_hdcc$RELEASE=0.5
+set_hdcc$RELEASE=0.575
 set_hdcc$REL_NOI=1
-set_hdcc$PED_NOI=1
+set_hdcc$PED_NOI=0.25
 set_hdcc$VELTRACK=0.99
 
 
@@ -47,6 +47,8 @@ set_hdcc$VELTRACK=0.99
 <global>
 amp_veltrack=0
 amp_veltrack_oncc$VELTRACK=100
+ampeg_release_oncc$RELEASE=1
+ampeg_release_curvecc$RELEASE=7
 
 <master>
 #include "Data/group.txt"
@@ -67,9 +69,7 @@ amplitude_oncc$PED_NOI=100
 //--------------------------
 <curve>
 curve_index=7
-v021=0.1
-v036=0.054
-v084=0.054
-v090=0.1
-v091=1
-v108=1
+v000=-0.3
+v063=0
+v064=0
+v127=1
