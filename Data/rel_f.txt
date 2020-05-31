@@ -62,9 +62,9 @@
 #define $REL082 0.6
 #define $REL083 0.6
 #define $REL084 0.6
-#define $REL085 0.5
-#define $REL086 0.5
-#define $REL087 0.5
+#define $REL085 0.65
+#define $REL086 0.65
+#define $REL087 0.65
 #define $REL088 0.85
 #define $REL089 0.9
 #define $REL090 1.1
