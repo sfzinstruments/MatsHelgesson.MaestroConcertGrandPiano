@@ -1,6 +1,5 @@
 #define $ART mcr
 master_label=$ART
-ampeg_release=0.3
 trigger=release
 rt_decay=3
 polyphony=1
