@@ -39,8 +39,8 @@ label_cc$VELTRACK=Veltrack ($VELTRACK)
 
 set_hdcc$RELEASE=0.575
 set_hdcc$REL_NOI=1
-set_hdcc$PED_NOI=0.25
-set_hdcc$VELTRACK=0.99
+set_hdcc$PED_NOI=0.1
+set_hdcc$VELTRACK=1
 
 
 //**************************************************************
