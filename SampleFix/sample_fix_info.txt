@@ -1,1 +1,1 @@
-Replace the mcg_ff_083.flac in the "Samples" directory
+If you hear this sample clipped at Right channel, then you can replace the mcg_ff_083.flac into the "Samples" directory
