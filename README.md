@@ -50,3 +50,12 @@ Rel.Noise, to control Key-release noise volume.
 Ped.Noise, to control Pedals noise volume.
 
 Veltrack, to control Velocity to volume tracking.
+
+The velocity ranges can be directly adjusted by clicking sforzando's "Open in Text Editor" button to match user's taste or keyboard response.
+It will open the sfz and then change the values of 5 velocity layers :
+#define $LOVELx
+#define $HIVELx
+
+Release noise velocity ranges (4 layers) :
+#define $REL_LOVELx
+#define $REL_HIVELx
