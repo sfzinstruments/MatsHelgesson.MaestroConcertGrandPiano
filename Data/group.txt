@@ -2,36 +2,36 @@
 master_label=$ART
 
 <group>
-lovel=1
-hivel=29
+lovel=$LOVEL1
+hivel=$HIVEL1
 #define $DYN p
 #include "Data/rel_p.txt"
 #include "Data/region.txt"
 
 <group>
-lovel=30
-hivel=59
+lovel=$LOVEL2
+hivel=$HIVEL2
 #define $DYN mp
 #include "Data/rel_mp.txt"
 #include "Data/region.txt"
 
 <group>
-lovel=60
-hivel=89
+lovel=$LOVEL3
+hivel=$HIVEL3
 #define $DYN mf
 #include "Data/rel_mf.txt"
 #include "Data/region.txt"
 
 <group>
-lovel=90
-hivel=108
+lovel=$LOVEL4
+hivel=$HIVEL4
 #define $DYN f
 #include "Data/rel_f.txt"
 #include "Data/region.txt"
 
 <group>
-lovel=109
-hivel=127
+lovel=$LOVEL5
+hivel=$HIVEL5
 #define $DYN ff
 #include "Data/rel_ff.txt"
 #include "Data/region.txt"
