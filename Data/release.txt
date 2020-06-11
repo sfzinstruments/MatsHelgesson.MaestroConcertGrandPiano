@@ -6,25 +6,25 @@ polyphony=1
 group=1
 
 <group>
-lovel=1
-hivel=31
+lovel=$REL_LOVEL1
+hivel=$REL_HIVEL1
 #define $DYN mp
 #include "Data/region.txt"
 
 <group>
-lovel=32
-hivel=63
+lovel=$REL_LOVEL2
+hivel=$REL_HIVEL2
 #define $DYN mf
 #include "Data/region.txt"
 
 <group>
-lovel=64
-hivel=95
+lovel=$REL_LOVEL3
+hivel=$REL_HIVEL3
 #define $DYN f
 #include "Data/region.txt"
 
 <group>
-lovel=96
-hivel=127
+lovel=$REL_LOVEL4
+hivel=$REL_HIVEL4
 #define $DYN ff
 #include "Data/region.txt"
