@@ -8,7 +8,7 @@ hikey=-1
 //===================================================
 <master>
 master_label=sus.pedal
-group=2
+group=1
 
 <group> on_hicc$SUS_PED=$PED_UP group_label=up
 <region> seq_position=1 region_label=1 sample=mcg_e_spr_mf.$EXT
@@ -22,7 +22,7 @@ group=2
 //===================================================
 <master>
 master_label=mid.pedal
-group=3
+group=2
 
 <group> on_hicc$MID_PED=$PED_UP group_label=up
 <region> seq_position=1 region_label=1 sample=mcg_e_mpr_mf.$EXT
@@ -36,7 +36,7 @@ group=3
 //===================================================
 <master>
 master_label=lid
-group=4
+group=3
 
 <group> on_hicc$LID=$PED_UP group_label=close
 <region> seq_position=1 region_label=1 sample=mcg_e_lc_mf.$EXT
