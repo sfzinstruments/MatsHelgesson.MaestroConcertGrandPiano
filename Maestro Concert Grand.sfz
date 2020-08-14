@@ -78,6 +78,8 @@ amp_veltrack=0
 amp_veltrack_oncc$VELTRACK=100
 ampeg_release_oncc$RELEASE=1
 ampeg_release_curvecc$RELEASE=7
+note_polyphony=1
+off_time=0.5
 
 <master>
 #include "Data/group.txt"
