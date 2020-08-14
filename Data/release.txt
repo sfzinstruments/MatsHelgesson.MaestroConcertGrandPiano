@@ -2,8 +2,6 @@
 master_label=$ART
 trigger=release
 rt_decay=3
-polyphony=1
-group=1
 
 <group>
 lovel=$REL_LOVEL1
