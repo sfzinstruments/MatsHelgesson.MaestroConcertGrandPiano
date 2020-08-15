@@ -1,4 +1,3 @@
-loop_mode=one_shot
 seq_length=2
 polyphony=1
 lokey=-1
