@@ -2,6 +2,7 @@
 master_label=$ART
 trigger=release
 rt_decay=3
+group=2
 
 <group>
 lovel=$REL_LOVEL1
