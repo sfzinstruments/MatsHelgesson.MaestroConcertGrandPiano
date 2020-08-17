@@ -8,6 +8,15 @@
 // --------------------------------------
 
 
+//midi cc
+#define $SUS_PED 64
+#define $MID_PED 66
+#define $LID 67
+#define $RELEASE 72
+#define $REL_NOI 80
+#define $PED_NOI 81
+#define $VELTRACK 99
+
 //velocity range
 #define $LOVEL1 1
 #define $HIVEL1 29
@@ -40,15 +49,6 @@
 //ped.noise range
 #define $PED_UP 0
 #define $PED_DN 127
-
-//midi cc
-#define $SUS_PED 64
-#define $MID_PED 66
-#define $LID 67
-#define $RELEASE 72
-#define $REL_NOI 80
-#define $PED_NOI 81
-#define $VELTRACK 99
 
 //file extension
 #define $EXT flac
