@@ -1,5 +1,6 @@
 #define $ART mcg
 master_label=$ART
+group=1
 
 <group>
 lovel=$LOVEL1
