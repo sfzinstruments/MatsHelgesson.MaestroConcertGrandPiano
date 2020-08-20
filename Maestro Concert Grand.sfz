@@ -58,13 +58,13 @@
 <control>
 default_path=Samples/
 
-label_cc$SUS_PED=Sus.Pedal ($SUS_PED)
-label_cc$MID_PED=Mid.Pedal ($MID_PED)
-label_cc$LID=Lid ($LID)
-label_cc$RELEASE=Release ($RELEASE)
-label_cc$REL_NOI=Rel.Noise ($REL_NOI)
-label_cc$PED_NOI=Ped.Noise ($PED_NOI)
-label_cc$VELTRACK=Veltrack ($VELTRACK)
+label_cc$SUS_PED=Sus.Pedal
+label_cc$MID_PED=Mid.Pedal
+label_cc$LID=Lid
+label_cc$RELEASE=Release
+label_cc$REL_NOI=Rel.Noise
+label_cc$PED_NOI=Ped.Noise
+label_cc$VELTRACK=Veltrack
 
 set_hdcc$RELEASE=0.575
 set_hdcc$REL_NOI=1
