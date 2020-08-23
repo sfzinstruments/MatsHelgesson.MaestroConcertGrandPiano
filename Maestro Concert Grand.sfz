@@ -58,6 +58,8 @@
 <control>
 default_path=Samples/
 
+label_cc7=Vol
+label_cc10=Pan
 label_cc$SUS_PED=Sus.Pedal
 label_cc$MID_PED=Mid.Pedal
 label_cc$LID=Lid
@@ -66,6 +68,8 @@ label_cc$REL_NOI=Rel.Noise
 label_cc$PED_NOI=Ped.Noise
 label_cc$VELTRACK=Veltrack
 
+set_cc7=100
+set_hdcc10=0.5
 set_hdcc$RELEASE=0.575
 set_hdcc$REL_NOI=1
 set_hdcc$PED_NOI=0.1
@@ -74,6 +78,10 @@ set_hdcc$VELTRACK=1
 
 //**************************************************************
 <global>
+amplitude_oncc7=100
+amplitude_curvecc7=4
+pan_oncc10=100
+pan_curvecc10=1
 amp_veltrack=0
 amp_veltrack_oncc$VELTRACK=100
 ampeg_release_oncc$RELEASE=1
@@ -92,6 +100,10 @@ amplitude_oncc$REL_NOI=200
 
 //**************************************************************
 <global>
+amplitude_oncc7=100
+amplitude_curvecc7=4
+pan_oncc10=100
+pan_curvecc10=1
 locc$PED_NOI=1
 amplitude_oncc$PED_NOI=100
 #include "Data/effect.txt"
