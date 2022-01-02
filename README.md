@@ -35,27 +35,42 @@ separate versions of the piano, and additional release
 samples in four velocities, adding 352 samples.
 
 
-# Details
+
+## Compatibility Notes
+
+This SFZ Instrument is reconstructed with the heavily use of SFZ specification level 2.0 + ARIA Extensions. With this is mind, this instrument will only played properly in Plogue sforzando and similar sfz samplers that used ARIA Engine. Trying to play this instrument in other than ARIA-based sfz samplers may cause issues and problems if it doesn't support the opcodes superset used in this sfz instrument. If ARIA-based sfz sampler is not your choice, we advised you to choose a sfz sampler that has similar level of opcodes support for this instrument can be played and sounded as it should.
+
+## Control Details
 
 Pedals and Lid noises has been moved to Pedal CCs in this SFZ version.
-
 - Sustain pedal noise, at Sustain pedal CC64
 - Mid pedal noise, at Sostenuto pedal CC66
 - Lid noise, at Soft pedal CC67
 
-Release, to control Volume envelope release time.
+- Release : Release time for the sustain layers
+- Rel.Noise : Key-release noise volume
+- Ped.Noise : Pedals noise volume (all 3 pedals)
+- Veltrack : Dynamic range / velocity to volume response
 
-Rel.Noise, to control Key-release noise volume.
+## Improvements and Features
 
-Ped.Noise, to control Pedals noise volume.
+- This piano has the note-selfmasking sfz native feature and polyphony optimized. This means, when playing a lot of notes (e.g. repetitive, trills or sustain pedal down), the voices count will be handled effectively and lower, which also means less jumping in CPU usage and results in more natural piano sound behavior.
 
-Veltrack, to control Velocity to volume tracking.
+- When not used, lowering the Rel.Noise and Ped.Noise to 0% also disabling those layers which means free up their polyphony usage and lowering voice count, so lesser CPU and RAM usage.
 
-The velocity ranges can be directly adjusted by clicking sforzando's "Open in Text Editor" button to match user's taste or keyboard response.
-It will open the sfz and then change the values of 5 velocity layers :
-#define $LOVELx
-#define $HIVELx
+## Usage Tips
 
-Release noise velocity ranges (4 layers) :
-#define $REL_LOVELx
-#define $REL_HIVELx
+- Setting Veltrack value to achieve a pleasant dynamic range that suit you also depend on your playing style and your keyboard/MIDI controller touch response. Try increase and decrease this "Veltrack" parameter as you play and feel the suitable one for you. To change the default value permanently, find this line in the sfz file : `set_hdcc$VELTRACK=1` and change the value to the one you that wanted, range from 0 to 1.
+
+- MIDI CC numbers are assigned at the top of the sfz file with the #define macro. They can be easily changed to your personal favor or to match your MIDI controller device setup. After loading the instrument in sforzando, click the "Open In Text Editor" blue botton at the INFO page, the sfz file will open by your default text editor. You will see a list of parameter's defined numbers. Change the number to your preference and then save it (e.g. Ctrl+S in WinOS), the CC numbers are updated to new ones. This is a handy feature in sfz and is a bit similar to MIDI Learn function.
+
+- The velocity ranges can be adjusted directly also using "Open In Text Editor" button to match your taste or keyboard response. 5 velocity for sustain layers : `#define $LOVELx` /  `#define $HIVELx` and 4 velocity for release noise layers : `#define $REL_LOVELx` / `#define $REL_HIVELx`
+
+
+## Update Log
+
+- Aug 23, 2020 : Cosmetic update.
+
+- Aug 18, 2020 : Renumbering polyphony group.
+
+- May 30, 2020 : Use release settings from original settings instead of curve definition which cause problem when sustain pedal involved. This issue was reported by Jeff Learman.
