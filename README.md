@@ -8,6 +8,9 @@ Created by Mats Helgesson, 2003, originally in Gigasampler format, converted to
 flac for SFZ format by kinwie and published with the permission of the author
 on May 16, 2020 via e-mail.
 
+Audio demo :
+https://sfzinstruments.github.io/pianos/maestro_concert_grand_piano
+
 See the `mcgreadme.txt` file included with this archive about other details and
 legal notice.
 
