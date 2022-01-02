@@ -69,7 +69,7 @@ Pedals and Lid noises has been moved to Pedal CCs in this SFZ version.
 
 - The velocity ranges can be adjusted directly also using "Open In Text Editor" button to match your taste or keyboard response. 5 velocity for sustain layers : `#define $LOVELx` /  `#define $HIVELx` and 4 velocity for release noise layers : `#define $REL_LOVELx` / `#define $REL_HIVELx`
 
-- Try add a Mid-Side plugin after sforzando, and lowering the mid level to make this Maestro Piano more wider. Also increase some low frequency and decrease high-mid frq, by adding an EQ plugin after sforzando can add warmth to the sound.
+- Try add a Mid-Side plugin after sforzando, and lowering the mid level to make this Maestro Piano more wider. Also increase some low frequency and decrease high-mid frequency, by adding an EQ plugin after sforzando can add warmth to the sound.
 
 ## Update Log
 
